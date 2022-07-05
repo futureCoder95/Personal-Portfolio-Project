@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Baloo+Bhai+2:wght@500&family=Comfortaa:wght@500&family=Comforter&family=Fredoka&family=Grenze+Gotisch:wght@400;500&family=Montserrat+Alternates&family=Montserrat:wght@500&family=Rock+Salt&family=Ubuntu&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Fredoka', sans-serif;
+}
+
+.sidebar {
+    position: absolute;
+    background-color: rgb(218, 209, 209);
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 32px;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 25px;
+    padding-top: 27px;
+    margin-top: 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.main {
+    width: 90vw;
+    height: 100vh;
+    /* background-color: yellow; */
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    /* background-color: rgb(114, 122, 129); */
+}
+
+.infoContainer {
+    /* background-color: rgb(131, 146, 160); */
+    height: 95vh;
+    width: 80vw;
+    margin: 64px auto;
+    display: flex;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.devInfo {
+    font-size: 16px;
+    position: absolute;
+    left: 336px;
+    top: 199px;
+}
+.hello{
+    font-size: 3em;
+    font-weight: 100;
+}
+.about{
+    font-size: 59px;
+    font-weight: 900;
+}
+.info{
+    font-size: 28px;
+}
+.info2{
+    font-size: 23px;
+}
+
+.devPic img {
+    position: absolute;
+    right: 118px;
+    top: 147px;
+    height: 379px;
+    width: 487px;
+  
+}
+.buttons .btn1{
+    margin: 0 7px;
+margin-top: 10px;
+padding: 12px 38px;
+background: rgb(140, 113, 177);
+font-size: 18px;
+border: none;
+color: white;
+box-shadow: 2px 2px 5px rgb(3, 2, 1);
+}
+.buttons .btn1:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+.contactForm{
+    /* padding-top: 37px; */
+    margin-left: 184px;
+}
+
+.contactForm h1{
+    font-size: 38px;
+    /* text-align: center; */
+    font-family: 'Poiret One', cursive;
+    padding: 12px 0;
+}
+.contactForm h1:hover{
+    text-decoration: underline;
+}
+
+.contactForm div{
+    padding: 13px 0;
+}
+
+.form-label{
+    font-size: 31px;
+}
+
+#clientemail{
+    width: 59vw;
+padding: 7px;
+border: 2px solid black;
+border-radius: 8px;
+}
+.infoCcontainer{
+    margin-left: 190px;
+}
+.ddevInfo p{
+    padding: 16px;
+}
+
+#clientphone{
+    width: 33vw;
+    padding: 7px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.btn{
+    padding: 5px 30px;
+    font-size: 20px;
+    /* margin-top: 10px; */
+    margin: 20px 5px;
+    border: 2px solid black;
+    background: none;
+
+}
+.btn:hover{
+    background-color:orange;
+    cursor: pointer;
+}
+
+.contactForm form div{
+    padding: 10px 0 ;
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    margin-top: 50px;
+    margin-left: 35px;
+}
+.skill{
+    width: 267px;
+    height: 25px;
+    background-color: red;
+}
+.skill1{
+    width: 325px;
+    height: 25px;
+    background-color: red;
+    margin-left: 20px;
+}
+.skill2{
+    width: 189px;
+    height: 25px;
+    background-color: red;
+    margin-left: 51px;
+}
+.skill3{
+    width: 120px;
+    height: 25px;
+    background-color: red;
+    margin-left: 1.6px;
+}
+.skill4{
+    width: 160px;
+    height: 25px;
+    background-color: red;
+    margin-left: 29.1px;
+}
+.skill5{
+    width: 300px;
+    height: 25px;
+    background-color: red;
+    margin-left: 7.1px;
+}
+.skill6{
+    width: 100px;
+    height: 25px;
+    background-color: red;
+    margin-left: 34px;
+}
+.blogContainer{
+    margin-left: 182px;
+}
+.blogItems p{
+    margin-top: 17px;
+}
+.blogItems h2{
+    margin-top: 18px;
+}
+.skillContainer{
+    margin-top: 20px;
+    line-height: 36px;
+}
+.skillItem{
+    display: flex;
+    align-items: center;
+}
+.hamBurger{
+    position: absolute;
+    cursor: pointer;
+    top: 5px;
+    left: 7px; 
+}
+.ham{
+    margin: 10px 10px;
+}
+.cross{
+    margin-left: 121px;
+}
+.sidebarGo{
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+/* Media Queries */
+
+@media (max-width: 1500px) {
+    /* *{
+        background-color: rgb(75, 230, 44);
+    } */
+    .devPic{
+        display: none;
+    }
+    .blogContainer , .contactForm , .infoCcontainer{
+        margin: 40px 8px;
+    }
+    .devInfo{
+        font-size: 10px;
+    }
+    .buttons{
+        font-size: 10px;
+    }
+    
+    
+}
